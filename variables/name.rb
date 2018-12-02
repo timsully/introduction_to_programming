@@ -6,4 +6,10 @@ name and then prints out a greeting message with their name included.
 puts "What is your name, playa?"
 name = gets.chomp
 
-puts "Nice, #{name}, playa."
+puts "Nice, #{name}. We have the same name, lul."
+
+puts "\nand anotha 10 mo times, playa\n\n"
+
+10.times do
+puts name + "\n"
+end
