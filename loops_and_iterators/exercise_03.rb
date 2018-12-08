@@ -11,5 +11,5 @@ your creation that prints each index and value of the array.
 array = [ 'key-one', 'value-one', 'key-two', 'value-two', 'key-three', 'value-three' ]
 
 array.each_with_index do |index, value|  
-  puts "#{index} \n #{value}"
+  puts " #{value} #{index}"
 end
