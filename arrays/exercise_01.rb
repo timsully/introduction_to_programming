@@ -12,6 +12,6 @@ number = 3
 #  puts "Three is not an integer in the array."
 #end
 
-if.arr.include?(number)
+if arr.include?(number)
   puts "#{number} is indeed in the array."
 end
