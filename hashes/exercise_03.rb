@@ -23,4 +23,4 @@ football_clubs.each_value { |value| puts value }
 puts "\n"
 
 puts "Displays both key and values:"
-football_clubs.select { |k, v| puts "The European team #{k} plays in, #{v}." }
+football_clubs.each { |k, v| puts "The European team #{k} plays in, #{v}." }
