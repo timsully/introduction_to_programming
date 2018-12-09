@@ -17,4 +17,6 @@ end
 greeting("Tim")
 # Using a hash to send the optional parameters
 greeting("Tim", {age: 21, city: "San Francisco"})
+# Notice curly braces are not required when a hash
+# is the last argument
 greeting("Tim", age: 21, city: "San Francisco")
