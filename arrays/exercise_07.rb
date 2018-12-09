@@ -6,5 +6,15 @@ The original array and the new array you've created. Print both arrays
 to the screen using the p method instead of puts.
 =end
 
-array = [2, 5, 6, 7, 10, 12, 101]
+# Creating a new array to iterate on
+arr = [1, 2, 3, 4, 5]
 
+# Assigning a new variable to the map method I will
+# use on arr to increment each int value by + 2 which
+# will return in a new array, aka new_arr
+new_arr = arr.map do |n|
+  n + 2
+end
+
+p arr
+p new_array
