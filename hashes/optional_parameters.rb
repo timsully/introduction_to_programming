@@ -17,3 +17,4 @@ end
 greeting("Tim")
 # Using a hash to send the optional parameters
 greeting("Tim", {age: 21, city: "San Francisco"})
+greeting("Tim", age: 21, city: "San Francisco")
