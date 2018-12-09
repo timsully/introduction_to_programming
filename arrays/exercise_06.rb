@@ -14,5 +14,5 @@ TypeError: no implicit conversion of String into Integer
 What is the problem and how can it be fixed?
 
 ANSWER - You need to specify an index value to target the element to change its 
-         string value, breh.
+         string value, breh. Arrays are indexed with integers, not strings.
 =end
