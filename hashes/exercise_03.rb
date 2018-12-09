@@ -14,13 +14,13 @@ football_clubs = {
 
 # Displays all keys
 puts "Displays all keys:"
-football_clubs.select { |k, v| puts k }
+football_clubs.each_key { |key| puts key }
 puts "\n"
 
 # Displays all of the keys values
 puts "Displays all of the keys values:"
-football_clubs.select { |k, v| puts v }
+football_clubs.each_value { |value| puts value }
 puts "\n"
 
 puts "Displays both key and values:"
-football_clubs.select { |k, v| puts k, v }
+football_clubs.select { |k, v| puts "The European team #{k} plays in, #{v}." }
