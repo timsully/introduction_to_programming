@@ -1,7 +1,7 @@
 def has_a_b?(string)
   # if the string specified in the arguments of the method calls being
   # passed into the methods parameter has a b then there's a match
-  if string =~ /b/
+  if /b/.match(string)
     puts "We have a match!"
   else
     puts "No match here."
