@@ -6,7 +6,7 @@ in the execute method. Instead, the method returns a Proc object.
 =end
 
 def execute(&block)
-  block
+  block.call
 end
 
 execute { puts "Hello from inside the execute method!" }
