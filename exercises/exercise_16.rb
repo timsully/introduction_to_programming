@@ -12,6 +12,7 @@ a = ['white snow', 'winter wonderland', 'melting ice', 'slippery sidewalk', 'sal
 
 # assign variable a equal to a.map method to split array of strings so that
 # each element(string) only contains one word
+# with or without argument on split method will split at whitespace
 a = a.map { |x| x.split(" ") }
 # re-assign a equal to a.flatten which will flatten the values returned the
 # method above
