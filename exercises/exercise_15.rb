@@ -11,6 +11,8 @@ starts with "w".
 # Delete all of the words that begin with "s"
 arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
 
-arr.delete_if { |x| x == String.start_with?("s") }
+arr.delete_if { |x| x.start_with?("s") }
+
+arr.delete_if { |x| x.start_with?("s", "w") }
 
 puts arr
