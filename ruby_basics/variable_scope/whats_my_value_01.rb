@@ -17,5 +17,5 @@ end
 
 # Output is 17
 my_value(a)
-# Output is 7
+# Output is 7. a is still equal to 7 at the time of the puts
 puts a
