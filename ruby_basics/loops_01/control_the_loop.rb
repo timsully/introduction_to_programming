@@ -8,7 +8,7 @@ loop do
   puts "Number of iterations = #{iterations}"
   # Each time the loop loops it will increment the value
   # assigned to the variable called iterations. Which initially 
-  # has a value of one.
+  # has a value of one. Syntax can also be interpreted as re-assignment
   iterations += 1
   # Will break the loop once the value assigned to the variable
   # iterations is 5. LIT.
