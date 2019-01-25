@@ -14,6 +14,8 @@ count = 0
 
 
 until count == numbers.size
+  # Use the count varible to access and output
+  # the appropiate element of the array using [count]
   puts numbers[count]
   count += 1
 end
