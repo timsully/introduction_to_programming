@@ -8,3 +8,8 @@ $ ruby repeater.rb
 This is what I typed.
 This is what I typed.
 =end
+
+puts "Type here"
+user_input = gets.chomp
+
+puts user_input
