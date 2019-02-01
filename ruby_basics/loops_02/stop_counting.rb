@@ -4,9 +4,6 @@ current number and stops iterating when the current number equals 2.
 =end
 
 5.times do |index|
-  if index < 3
-    puts index
-  else
-    break
-  end
+  puts index
+  break if index == 2
 end
