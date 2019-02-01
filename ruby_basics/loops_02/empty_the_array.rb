@@ -7,10 +7,8 @@ Keep in mind only to use loop, not while, until, etc.
 names = ['Sally', 'Joe', 'Lisa', 'Henry']
 
 loop do
-  puts "------- not popped -------"
-  puts names
-  names.pop
-  puts "------- popped -------"
-  puts names
-  break
+  # Pops off the first element of the array and returns it.
+  puts names.shift
+  # Stops the loop once names array is empty.
+  break if names.empty?
 end
