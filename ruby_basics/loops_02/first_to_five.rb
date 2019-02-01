@@ -9,6 +9,7 @@ number_a = 0
 number_b = 0
 
 loop do
+  # Incrementing number_a assigned value by any number 0-5
   puts number_a += rand(6)
   puts number_b += rand(6)
 
