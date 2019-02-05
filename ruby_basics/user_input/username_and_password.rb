@@ -5,8 +5,8 @@ program should solicit both the user name and password, then validate both,
 and issue a generic error message if one or both are incorrect; the error message
 should not tell the user which item is incorrect.
 =end
-PASSWORD = "nunya"
 USER_NAME = "lul"
+PASSWORD = "nunya"
 
 loop do
   # Require user name and validate both
@@ -15,7 +15,7 @@ loop do
   puts ">> Please enter your password:"
   password_try = gets.chomp
   break if username_try && password_try == PASSWORD && USER_NAME
-  puts ">> Invalid password!"
+  puts ">> Authorization failed!"
 end
 
 puts "Welcome!"
