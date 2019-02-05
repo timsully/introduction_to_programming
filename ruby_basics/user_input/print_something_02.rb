@@ -10,3 +10,13 @@ receive a valid y or n response. In addition, your program should allow both Y
 and N (uppercase) responses; case sensitive input is generally a poor user 
 interface choice. Whenever possible, accept both uppercase and lowercase inputs.
 =end
+puts "Do you want me to print \"something\"? (y/n)"
+user_input = gets.chomp
+
+if user_input == "y" || "Y"
+  puts "something"
+elsif user_input == "n" || "N"
+  exit()
+else
+  puts "Invalid input! Please enter y or n"
+end
