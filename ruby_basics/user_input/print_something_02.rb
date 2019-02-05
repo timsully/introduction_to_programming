@@ -10,13 +10,14 @@ receive a valid y or n response. In addition, your program should allow both Y
 and N (uppercase) responses; case sensitive input is generally a poor user 
 interface choice. Whenever possible, accept both uppercase and lowercase inputs.
 =end
-puts "Do you want me to print \"something\"? (y/n)"
-user_input = gets.chomp
-
-if user_input == "y" || "Y"
-  puts "something"
-elsif user_input == "n" || "N"
-  exit()
-else
-  puts "Invalid input! Please enter y or n"
+choice = nil
+loop do
+  puts ">> Do you want me to print something? (y/n)"
+  # convert user input to a lower case string
+  choice = gets.chomp.downcase
+  # break function if input value assigned to choice variable 
+  # doesn't include the string 'y' or 'n'
+  break if %w(y n).include?(choice)
+  puts ">> Invalid input! Please enter y or n"
 end
+puts "something" if choice == 'y'
