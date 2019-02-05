@@ -8,3 +8,23 @@ result instead of trying to insist on a valid number; validation of numeric inpu
 is a topic with a fair number of edge conditions that are beyond the scope 
 of this exercise. 
 =end
+puts "On a scale of 1-10 how great is launch school?"
+user_input = gets.chomp.to_i
+
+# Print amount of lines user asks for
+if user_input >= 3
+  puts "Launch School is the best!\n" * user_input
+  sleep 1
+  puts "Oh, but wait..."
+  sleep 0.5
+  puts "That's not true!"
+  sleep 0.5
+  puts "Because..."
+  sleep 2
+  puts "You can't measure Launch School's greatness on a scale."
+else
+  puts "That's not enough lines."
+  sleep 1
+  puts "LUL"
+  sleep 0.5
+end
