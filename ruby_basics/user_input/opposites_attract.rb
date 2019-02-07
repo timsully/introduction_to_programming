@@ -23,6 +23,8 @@ def read_number
   end
 end
 
+# Initializing to nil to allow us to calculate the sum
+# without error.
 first_number = nil
 second_number = nil
 
