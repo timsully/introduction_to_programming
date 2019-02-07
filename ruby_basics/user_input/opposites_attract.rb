@@ -13,14 +13,30 @@ def valid_number?(numbers_string)
   numbers_string.to_i.to_s == numbers_string && numbers_string.to_i != 0
 end
 
-# ask for positive input
-positive_value = gets.chomp.to_i
+def read_number
+  loop do
+    puts ">> Please enter a positive or negative integer:"
+    number = gets.chomp
+    # 
+    return number.to_i if valid_number?(number)
+  end
+end
 
+first_number = nil
+second_number = nil
 
-# ask for negative input
-negative_value = gets.chomp.to_i
+loop do
+  # Calling read_number method to prompt user for integer value
+  # and assign it to variable first_number --- same thing happens
+  # for second_number variable
+  first_number = read_number
+  second_number = read_number
+  # Break if either variable value assigned to it is less than 0
+  break if first_number * second_number < 0
+  puts ">> Sorry. One integer must be positive, one must be negative."
+  puts ">> Please start over."
+end
 
-# Invalid if 0 integer entered as input, if requirement isn't met start over
-
-
-# Evaluate the value to get sum
+# Calculate sum assigned to both variables
+sum = first_number + second_number
+puts "#{first_number} + #{second_number} = #{sum}"
