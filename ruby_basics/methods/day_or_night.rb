@@ -7,3 +7,12 @@ whether it's day or night.
 =end
 daylight = [true, false].sample
 
+def time_of_day(boolean)
+  if boolean == true
+    puts "It's daytime!"
+  elsif
+    puts "It's nighttime!"
+  end
+end
+
+time_of_day(daylight)
