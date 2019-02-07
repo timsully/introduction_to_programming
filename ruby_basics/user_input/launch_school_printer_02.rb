@@ -5,13 +5,15 @@ like the code below. Modify the program below so it repeats itself after each
 input/print iteration, asking for a new number each time through. The program
 should keep running until the user enters q or Q.
 =end
+# Outer loop controls the repetition of the input and output process
 loop do
   input_string = nil
   number_of_lines = nil
 
   loop do
     puts ">> How many output lines do you want?\nEnter a number >= 3 (Q to Quit):"
-
+    
+    # grabs string and converts it to lower case letters
     input_string = gets.chomp.downcase
     break if input_string == 'q'
 
@@ -25,6 +27,7 @@ loop do
 
   while number_of_lines > 0
     puts "Launch school is the best!"
+    # Will loop string above until number is decremented to 0
     number_of_lines -= 1
   end
 end
