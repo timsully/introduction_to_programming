@@ -13,5 +13,9 @@ def cat(name)
   return name
 end
 
-puts "The dog's name is #{dog('Spot')}."
-puts "The cat's name is #{cat}."
+def fix(dog, cat)
+  puts "The dog's name is #{dog}."
+  puts "The cat's name is #{cat}."
+end
+
+fix("Spot", "Ginger")
