@@ -12,3 +12,15 @@ You may use the following method to validate input integer:
 def valid_number?(numbers_string)
   numbers_string.to_i.to_s == numbers_string && numbers_string.to_i != 0
 end
+
+# ask for positive input
+positive_value = gets.chomp.to_i
+
+
+# ask for negative input
+negative_value = gets.chomp.to_i
+
+# Invalid if 0 integer entered as input, if requirement isn't met start over
+
+
+# Evaluate the value to get sum
