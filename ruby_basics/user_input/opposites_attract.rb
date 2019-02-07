@@ -9,6 +9,7 @@ entered, and start over if the requirements isn't met.
 
 You may use the following method to validate input integer:
 =end
+# Also treats 0 as an invalid entry
 def valid_number?(numbers_string)
   numbers_string.to_i.to_s == numbers_string && numbers_string.to_i != 0
 end
@@ -32,6 +33,8 @@ loop do
   first_number = read_number
   second_number = read_number
   # Break if either variable value assigned to it is less than 0
+  # In other words, exits if product is negative or issues an error
+  # message and repeats the loop if the product is positive.
   break if first_number * second_number < 0
   puts ">> Sorry. One integer must be positive, one must be negative."
   puts ">> Please start over."
