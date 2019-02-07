@@ -5,5 +5,9 @@ value should be the value of the argument.
 
 The code should output true twice.
 =end
+def assign_name(name="Bob")
+  name
+end
+
 puts assign_name("Kevin") == "Kevin"
 puts assign_name == "Bob"
