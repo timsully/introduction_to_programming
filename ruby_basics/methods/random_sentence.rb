@@ -8,24 +8,19 @@ values into a sentence and returns it from the method.
 Example output:
 George went walking today!
 =end
+def name(names)
+  names.sample
+end
+
+def activity(activities)
+  activities.sample
+end
+
+def sentence(name, activity)
+  "#{name} went #{activity} today!"
+end
+
 names = ["Dave", "Sally", "George", "Jessica"]
 activities = ["walking", "running", "cycling"]
 
-def name(arr)
-  # Takes array passed into arg and generates random element to be printed
-  puts arr.sample
-end
-
-def activity(array)
-  # take activities array passed into method as argument and prints random 
-  # element in array
-  puts array.sample
-end
-
-def sentence(one, two)
-  # Combines both values into a sentence and returns it from the method
-  puts one.sample + " " + two.sample
-end
-
-puts sentence(names, activities)
-# puts sentence(name(names), activity(activities))
+puts sentence(name(names), activity(activities))
