@@ -5,7 +5,8 @@ attempted to answer.
 Answer Before: There is no argument given to be passed into what has been
                written in the loop within the method. I believe an error will be thrown.
 
-Answer After: Times method returns the inital integer(5).
+Answer After: Times method returns the inital integer(5) and prints out each element 
+              as it goes.
 =end
 def count_sheep
   5.times do |sheep|
