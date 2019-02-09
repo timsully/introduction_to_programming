@@ -3,11 +3,10 @@ Convert the following case statement to an if statement.
 =end
 stoplight = ['green', 'yellow', 'red'].sample
 
-case stoplight
-when 'green'
+if stoplight == 'green'
   puts "Go!"
-when 'yellow'
+elsif stoplight == 'yellow'
   puts "Slow down!"
-when 'red'
+elsif stoplight == 'red'
   puts "Stop!"
 end
