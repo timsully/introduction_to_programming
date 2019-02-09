@@ -4,4 +4,5 @@ and print each character.
 =end
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
+# Split returns an array containing each character as its own element
 puts alphabet.split(//)
