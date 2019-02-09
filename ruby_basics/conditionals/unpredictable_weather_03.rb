@@ -11,6 +11,8 @@ condition is met or not met.
 =end
 sun = ['visible', 'hidden'].sample
 
+# Using statement modifiers which is adding conditions
+# at the end of a statement as indicated below.
 puts "The sun is  so bright!" if sun == 'visible'
 
 puts "The clouds are blocking the sun!" unless sun == 'visible'
