@@ -7,6 +7,6 @@ if stoplight == 'green'
   puts "Go!"
 elsif stoplight == 'yellow'
   puts "Slow down!"
-elsif stoplight == 'red'
+elsif 'red'
   puts "Stop!"
 end
