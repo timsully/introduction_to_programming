@@ -7,6 +7,7 @@ to a variable and print that variable.
 =end
 status = ['awake', 'tired'].sample
 
+# Saving the return value of the if statement to a variable
 alert = if status == 'awake'
           "Be productive!"
         else
