@@ -11,6 +11,8 @@ false
 =end
 name = 'Roger'
 
+# casecmp compares the value of two strings while ignoring the 
+# case of both strings
 if name.casecmp('RoGeR')
   puts true
 elsif
@@ -22,3 +24,7 @@ if name == 'DAVE'
 elsif
   puts false
 end
+
+# Launch School Solution
+puts name.casecmp('RoGeR') == 0
+puts name.casecmp('DAVE') == 0
