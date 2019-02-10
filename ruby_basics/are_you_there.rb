@@ -16,3 +16,7 @@ if colors.include? 'purple'
 else
   puts false
 end
+
+# Launch School Solution
+puts colors.include?('yellow')
+puts colors.include?('purple')
