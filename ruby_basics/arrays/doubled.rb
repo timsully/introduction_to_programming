@@ -11,4 +11,8 @@ Expected output:
 =end
 numbers = [1, 2, 3, 4, 5]
 
-numbers.map { |x| puts x * 2 }
+doubled_numbers = numbers.map do |x|
+                    x * 2
+                  end
+
+p doubled_numbers
