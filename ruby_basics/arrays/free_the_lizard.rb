@@ -8,4 +8,8 @@ Expected output:
 I have a pet fish!
 =end
 pets = ['cat', 'dog', 'fish', 'lizard']
-my_pets = pets[2..3]
+my_pets = pets[2]
+
+pets.pop
+
+puts "I have a pet #{my_pets}!"
