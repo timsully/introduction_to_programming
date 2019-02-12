@@ -11,3 +11,7 @@ numbers = {
   medium: 50,
   low:    10
 }
+
+half_numbers = numbers.map { |x, y| p y / 2 }
+
+p half_numbers
