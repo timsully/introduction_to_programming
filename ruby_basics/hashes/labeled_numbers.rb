@@ -6,8 +6,14 @@ A high number is 100.
 A medium number is 50.
 A low number is 10.
 =end
-number = {
+numbers = {
   high:   100,
   medium: 50,
   low:    10
 }
+
+numbers.each do |x, y| 
+  puts "A #{x} number is #{y}."
+end
+
+# puts "A high number is #{number[:high]}"
