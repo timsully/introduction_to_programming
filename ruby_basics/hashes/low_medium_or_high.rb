@@ -13,10 +13,8 @@ numbers = {
 }
 
 low_numbers = numbers.select do |key, value|
-                if value < 25
-                  p key, value
-                end
+                value < 25
               end
 
 
-puts low_numbers
+p low_numbers
