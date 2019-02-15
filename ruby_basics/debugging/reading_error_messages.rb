@@ -14,6 +14,12 @@ When I comment out the first call of the method and execute the file again a
 NoMethodError is thrown. Since integers do not have an each method, this raises
 a NoMethodError.
 
+Launch School Solution:
+This method is expecting an array of integers to be passed in as the argument.
+The example method invocations should look like this:
+find_first_nonzero_among([0, 0, 1, 0, 2, 0])
+find_first_nonzero_among([1])
+
 =end
 def find_first_nonzero_among(numbers)
   numbers.each do |n|
@@ -23,5 +29,5 @@ end
 
 # Examples
 
-# find_first_nonzero_among(0, 0, 1, 0, 2, 0)
-find_first_nonzero_among(1)
+puts find_first_nonzero_among([0, 0, 1, 0, 2, 0])
+puts find_first_nonzero_among([1])
