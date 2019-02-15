@@ -7,6 +7,6 @@ key :dog in the pets hash.
 =end
 pets = { cat: 'fluffy', dog: ['sparky', 'fido'], fish: 'oscar' }
 
-pets[:dog] = 'bowser'
+pets[:dog].push('bowser', 'timmehhhh')
 
 p pets #=> {:cat=>"fluffy", :dog=>"bowser", :fish=>"oscar"}
