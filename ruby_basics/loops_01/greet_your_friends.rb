@@ -13,3 +13,11 @@ friends = ["Sarah", "John", "Hannah", "Dave"]
 for count in friends
   puts "Hello, #{count}!"
 end
+
+# or
+counter = 0
+for i in friends
+  puts "Hello, #{friends[counter]}!"
+  counter += 1
+  break if counter == friends.size
+end
