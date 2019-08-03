@@ -10,7 +10,7 @@ numbers = []
 while numbers.size < 5
   # Using the shovel operator to append each new
   # number to the end of the array.
-  numbers << rand(100)
+  numbers << rand(0..99)
 end
 
 puts numbers
