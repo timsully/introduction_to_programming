@@ -9,3 +9,15 @@ loop do
   break if answer == 'yes'
   puts "Incorrect answer. Please answer \"yes\"."
 end
+
+# or
+loop do
+  puts "Should I stop looping?"
+  answer = get.chomp
+
+  if answer == "yes"
+    break
+  else
+    next
+  end
+end
